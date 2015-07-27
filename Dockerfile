@@ -1,6 +1,12 @@
+## File to build docker image for Boinc
+#
+# Forked from  ozzyjohnson/boinc with original MAINTAINER Ozzy Johnson <docker@ozzy.io>
+# I'd advise pulling from that repo for most up to date version for this. 
+# I'm using and forking this over mainly as an example for kubernetes. 
+
 FROM debian:wheezy
 
-MAINTAINER Ozzy Johnson <docker@ozzy.io>
+MAINTAINER Chris Klebna <ckleban@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 

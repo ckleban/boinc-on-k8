@@ -35,5 +35,6 @@ spec:
       containers:
       - image: ckleban/boinc-on-k8
         name: boinc-workers
+        #args: ["-attach_project", <BoincProjectServer>, <Account Key>]
         args: ["-attach_project", "www.worldcommunitygrid.org", "828bcd757c0d4eb55ef2cd560a306db0"]
-    
+        

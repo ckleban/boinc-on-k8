@@ -28,6 +28,7 @@ Boinc is a program that is used to donate cpu cycles for charitable purposes. Bo
 ### How to stop the boinc workers:
 
  1. run this command:
+ 
  `kubectl stop -f boinc-rc.yml `
 
 

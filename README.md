@@ -12,7 +12,7 @@ kubectl scale rc boinc-workers --replicas=3
 
 ### Background:
 
-    Boinc is a program that is used to donate cpu cycles for charitable purposes. Boinc is put into a Docker container, we deploy X copies of these containers to a Kubernetes cluster using Kubernetes' replication controller construct. The key files are the docker container that wraps up boinc and the bonic-rc.yml file that deploys some number of workers to a kubernetes cluster. 
+Boinc is a program that is used to donate cpu cycles for charitable purposes. Boinc is put into a Docker container, we deploy X copies of these containers to a Kubernetes cluster using Kubernetes' replication controller construct. The key files are the docker container that wraps up boinc and the bonic-rc.yml file that deploys some number of workers to a kubernetes cluster. 
 
 
 ### How to use this:
@@ -28,15 +28,11 @@ kubectl scale rc boinc-workers --replicas=3
 `kubectl scale rc boinc-workers --replicas=3`
  
 ### How to stop the boinc workers:
-
-1. run this command:
  
 `kubectl stop -f boinc-rc.yml `
 
 
-
-
 ### Notes:
 
-    I forked ozzyjohnson's work to get boinc running in docker and added some kubernetes files on top of his work. If you want to use boinc straight in docker, go see ozzyjohnson/docker-boinc
+I forked ozzyjohnson's work to get boinc running in docker and added some kubernetes files on top of his work. If you want to use boinc straight in docker, go see ozzyjohnson/docker-boinc
 

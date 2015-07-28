@@ -2,7 +2,7 @@ boinc-on-k8
 ===========
 
 ### What:   
-    Donate extra cpu cycles to charity with Kubernetes, Docker and boinc.
+Donate extra cpu cycles to charity with Kubernetes, Docker and boinc.
 
 ### tldr:
 ```

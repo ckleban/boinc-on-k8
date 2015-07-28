@@ -19,14 +19,14 @@ Boinc is a program that is used to donate cpu cycles for charitable purposes. Bo
  2. create an account at www.worldcommunitygrid.org and grab the and create yourself an acocunt. 
  3. Grab the 'account key' from the settings/my profile UI path and insert your key in the boinc-rc.yml file
  4. Spin up a single  boinc worker in your k8 clusters by running:
- -- > kubectl create -f boince-rc.yml 
+ `-- > kubectl create -f boince-rc.yml `
  5. Change the number of boinc workers to some specific number (in this case, 3 workers)
- -- > kubectl scale rc boinc-workers --replicas=3
+ `-- > kubectl scale rc boinc-workers --replicas=3`
  
 ### How to stop the boinc workers:
 
  1. run this command:
- -- > kubectl stop -f boinc-rc.yml 
+ `-- > kubectl stop -f boinc-rc.yml `
 
 
 
